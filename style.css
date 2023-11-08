@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;   
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Archivo', sans-serif;
+    cursor: none;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #fff
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #282828;
+    border-radius: 10px;
+}
+
+body
+{
+    background: #ededed;
+    height: 100vh;
+    position: relative;
+}
+
+#body
+{
+    overflow: hidden;
+}
+
+/* ------------------------------------------------ */
+
+header
+{
+    height: 10%;
+}
+
+#navigation-bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.itens a
+{
+    position: relative;
+    color: #000;
+    font-size: 12px;
+}
+
+.itens a::before
+{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transition: all .3s linear;
+    border-bottom: 1.5px solid #000;
+}
+
+.itens a:hover::before
+{
+    width: 100%;
+    left: 0;
+}
+
+.itens .a:hover::before
+{
+    width: 100%;
+    left: 0;
+}
+
+#shopping-cart
+{
+    width: 16px;
+}
+
+#logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87%;
+}
+
+#logo img
+{
+    width: 300px;
+    filter: invert();
+}
+
+footer
+{
+    font-size: 12px;
+    text-align: center;
+    height: 3%;
+}
+
+#apagar
+{
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    color: black;
+}
+
+#cursor
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(src/site-src/umbrella-2.png);
+    background-size: cover;
+    rotate: -30deg;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
